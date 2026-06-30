@@ -1,11 +1,3 @@
-# PhishGuard
-
-AI-assisted phishing detection and security-awareness training. A FastAPI backend
-scores URLs and message text across three signals — URL structure, linguistic
-social-engineering patterns, and (optionally) visual brand matching — and a React
-console lets you analyze content, run a red-flag training drill, and review
-session statistics.
-
 ## Project structure
 
 ```
@@ -33,10 +25,7 @@ phishguard/
 │   ├── content.js / content.css
 │   ├── popup.html / popup.js
 │   └── assets/icon-*.png
-├── docker-compose.yml
-├── Dockerfile.backend
-├── Dockerfile.frontend
-└── .env.example
+
 ```
 
 ## Running locally (without Docker)
@@ -56,14 +45,6 @@ npm install
 npm run dev
 # → http://localhost:3000, proxies /api to the backend on :8000
 ```
-
-## Running with Docker
-
-```bash
-docker-compose up --build
-```
-- Backend: http://localhost:8000
-- Frontend: http://localhost:3000
 
 ## Browser extension
 
